@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
 
-        if (!email || !password) {
-            alert("Por favor, ingrese un correo electrónico y una contraseña.");
+        if (!email) {
+            alert("Por favor, ingrese un correo electrónico.");
+
+            return;
+        }
+        if (!password) {
+            alert("Por favor, ingrese una contraseña.");
 
             return;
         }
