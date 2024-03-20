@@ -37,12 +37,12 @@
     </nav><!-- Fin del nav-->
   </header>
 
-  <div class="container mt-3">
+  <!-- <div class="container mt-3">
     <div class="row">
       <div class="card mb-3 ms-auto p-2 bd-highlight" style="max-width: 200px">
         <div class="row g-0 d-flex">
           <div class="col-md-4">
-            <img src="../imagenes/user-images.png" alt="" /> <!--imagen de logo con el respectivo user-->
+            <img src="../imagenes/user-images.png" alt="" /> 
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="container">
     <h2>Admin Settings</h2>
@@ -61,15 +61,13 @@
     <article>
       <h3 class="text-center m-4">Your current list of Playlist:</h3> <!--lista de playlist-->
       <section>
-        <table id="rideTable" class="table table-striped text-center">
+        <table id="videos-list" class="table table-striped text-center">
           <thead>
             <tr>
               <th>Name</th>
               <th>URL</th>
-
             </tr>
           </thead>
-          <tbody></tbody>
         </table>
         <a href="../newVideo/newVideo.html" class="btn btn-success">
           <img src="../imagenes/Add.png" alt="" width="30"></a>
@@ -81,8 +79,8 @@
           <img src="../imagenes/Edit.png" alt="" width="40">
 
         </button>
-        <button type="button" class="btn btn-info" id="view" onclick="loadRideForm(true)">
-          <!-- URL DE VER RIDE-->
+        <button type="button" class="btn btn-info">
+          <!-- URL DE Ver Playlist-->
 
           <img src="../imagenes/view.png" alt="" width="40">
 
@@ -102,7 +100,7 @@
       Copyright © TubeKids 2024 All rights reserved.
     </p>
   </footer>
-  <script src="../JS/dashboard.js"></script>
+  <script src="dashboard.js"></script>
 </body>
 
 </html>

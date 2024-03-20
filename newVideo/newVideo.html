@@ -40,24 +40,24 @@
     </nav> <!-- fin de nav-->
   </header>
 
-  <div class="container mt-3">
+  <!-- <div class="container mt-3">
     <div class="row">
       <div class="card mb-3 ms-auto p-2 bd-highlight" style="max-width: 200px">
         <div class="row g-0 d-flex">
           <div class="col-md-4">
             <img src="../imagenes/user-images.png" alt=""> <!--imagen de persona adjunta al usuario logeado-->
 
-          </div>
+         <!--  </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Welcome</h5>
               <p class="card-text" id="userLogged"></p> <!-- id de usuario logeado-->
-            </div>
+            <!-- </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> --> 
 
   <div class="container mt-5">
     <form class="row mb-3 justify-content-center"> <!--Inico del forms de ingresar nuevo video-->
@@ -66,11 +66,11 @@
       <div class="col-auto">
         <div class="input-group mb-3">
           <span class="input-group-text">Name</span>
-          <input type="text" aria-label="First name" class="form-control" id="rideName" />
+          <input type="text" aria-label="First name" class="form-control" id="name" />
         </div>
         <div class="input-group mb-3">
           <span class="input-group-text">Url Video</span>
-          <input type="text" aria-label="First name" class="form-control" id="start" />
+          <input type="text" aria-label="First name" class="form-control" id="url" />
 
     </form>
   </div>
@@ -80,7 +80,7 @@
   </div>
   <div class="row justify-content-center"> 
     <div class="container mt-3"></div>
-    <button type="button" class="btn btn-success" onclick="getCheckboxValues(this.form); return false;">Save</button>
+    <button id= "createButton" type="button" class="btn btn-success" >Save</button>
     <!-- boton de guardar -->
   </div>
   
@@ -90,7 +90,7 @@
       Copyright © TubeKids 2024 All rights reserved.
     </p>
   </footer>
-  <!-- <script src="../JS/newVideo.js"></script>  --><!-- ../js/newVideo.js -->
+   <script src="newVideo.js"></script>
 
 </body>
 

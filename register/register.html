@@ -35,40 +35,46 @@
     <section class="mt-5">
       <h2>Create Account</h2>
       <br />
-      <form id="loginForm" class="row align-items-end mb-3"> <!-- Form de crear cuenta-->
+      <form id="formData" class="row align-items-end mb-3"> <!-- Form de crear cuenta-->
         <div class="col mb-3">
           <label class="col-sm-3 col-form-label">First Name</label>
           <div class="col">
             <input type="text" class="form-control" name="name" id="name" />
           </div>
+
           <label class="col-sm-3 col-form-label">Last Name</label>
           <div class="col">
-            <input type="text" class="form-control" name="lastName" id="lastName" />
+            <input type="text" class="form-control" name="lastname" id="lastname" />
           </div>
+
           <label class="col-sm-3 col-form-label">Email</label>
           <div class="col">
             <input type="text" class="form-control" name="email" id="email" />
           </div>
+
           <label class="col-sm-3 col-form-label">Password</label>
           <div class="col">
             <input type="password" class="form-control" name="password" id="password" />
           </div>
+
           <label class="col-sm-4 col-form-label">Repeat Password</label>
           <div class="col">
             <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" />
           </div>
+
           <label class="col-sm-3 col-form-label">Pin</label>
           <div class="col">
             <input type="text" class="form-control" pin="pin" id="pin" />
+          </div>
+
+          <label class="col-sm-3 col-form-label">Role</label>
+          <div class="col">
+            <input type="text" class="form-control" role="role" id="role" />
+          </div>
 
             <label class="col-sm-3 col-form-label">Country</label>
             <div class="col">
               <input type="text" class="form-control" country="country" id="country" />
-
-              <!--  <label class="col-sm-3 col-form-label">Birthay</label>
-              <div class="col">
-                <input type="text" class="form-control" birthday="birthday"/> -->
-
               <form>
                 <div class="row form-group">
                   <label for="date" class="col-sm-0 col-form-label">Birthay</label>
@@ -92,8 +98,9 @@
   <button type="button" class="d-grid gap-2 col-2 mx-auto" id="createUser">Register</button>
   <a href="../dashboard/dashboard.html"></a> Lleva a la dasboarh -->
       <div class="d-grid gap-2 col-2 mx-auto">
-        <a  class="btn btn-primary active" aria-current="page"
-          id=" register">Register</a>
+        <!-- <a  class="btn btn-primary active" aria-current="page"
+          id=" register">Register</a> -->
+        <button class="btn btn-info" Type="button" id="registerButton">Register</button>
 
         <p class="text-center mt-2">
           Already an User?
@@ -107,5 +114,8 @@
     $('#datepicker').datepicker();
   });
 </script>
+
+<script src="register.js"></script>
+
 
 </html>
