@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const userId = JSON.parse(localStorage.getItem("user")).uid || "";
+   const userId = JSON.parse(localStorage.getItem("user")).uid || "";
 
     fetch(`http://localhost:8080/api/playlist/${userId}`, {
         method: "GET",
